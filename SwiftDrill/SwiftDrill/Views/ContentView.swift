@@ -20,6 +20,7 @@ struct ContentView: View {
                 .multilineTextAlignment(.center)
                 .lineSpacing(4.0)
                 .font(.footnote)
+            
             Text(String(game.target))
                 .kerning(-1.0)
                 .font(.largeTitle)
@@ -31,8 +32,8 @@ struct ContentView: View {
                 Slider(value: self.$sliderValue, in: 1.0...100.0)
                 Text("100")
                     .bold()
-                
             }
+            
             Button(action: {
                 print("Hey SwiftUI!!")
                 self.alertISVisible = true
@@ -40,7 +41,7 @@ struct ContentView: View {
                 Text("Hit me")
             }
             .alert(isPresented: $alertISVisible) {
-                var roundedValue = Int (self.sliderValue.rounded())
+                let roundedValue = Int (self.sliderValue.rounded())
                 return Alert(title: Text("Hello there!!"), message: Text("The slider's value is \(roundedValue).\n" + "You scored \(self.game.points(sliderValue: roundedValue))"), dismissButton: .default(Text("Awesome!")))
             }
         }
