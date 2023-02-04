@@ -51,9 +51,9 @@
 		03297C1D298EEA55006B9FC4 /* SwiftDrill */ = {
 			isa = PBXGroup;
 			children = (
-				03297C1E298EEA55006B9FC4 /* SwiftDrillApp.swift */,
-				03297C20298EEA55006B9FC4 /* ContentView.swift */,
-				03297C22298EEA57006B9FC4 /* Assets.xcassets */,
+				03297C2E298F1211006B9FC4 /* Models */,
+				03297C2D298F1201006B9FC4 /* Views */,
+				03297C2C298F11F9006B9FC4 /* App */,
 				03297C24298EEA57006B9FC4 /* Preview Content */,
 			);
 			path = SwiftDrill;
@@ -65,6 +65,30 @@
 				03297C25298EEA57006B9FC4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		03297C2C298F11F9006B9FC4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				03297C22298EEA57006B9FC4 /* Assets.xcassets */,
+				03297C1E298EEA55006B9FC4 /* SwiftDrillApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		03297C2D298F1201006B9FC4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				03297C20298EEA55006B9FC4 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		03297C2E298F1211006B9FC4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
