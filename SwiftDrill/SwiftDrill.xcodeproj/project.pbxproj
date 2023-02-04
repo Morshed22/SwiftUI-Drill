@@ -12,7 +12,18 @@
 		03297C23298EEA57006B9FC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03297C22298EEA57006B9FC4 /* Assets.xcassets */; };
 		03297C26298EEA57006B9FC4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03297C25298EEA57006B9FC4 /* Preview Assets.xcassets */; };
 		03297C30298F12CB006B9FC4 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03297C2F298F12CB006B9FC4 /* Game.swift */; };
+		03297C38298F173F006B9FC4 /* SwiftDrillTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03297C37298F173F006B9FC4 /* SwiftDrillTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		03297C39298F173F006B9FC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03297C13298EEA55006B9FC4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03297C1A298EEA55006B9FC4;
+			remoteInfo = SwiftDrill;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		03297C1B298EEA55006B9FC4 /* SwiftDrill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDrill.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,10 +32,19 @@
 		03297C22298EEA57006B9FC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03297C25298EEA57006B9FC4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		03297C2F298F12CB006B9FC4 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		03297C35298F173F006B9FC4 /* SwiftDrillTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftDrillTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		03297C37298F173F006B9FC4 /* SwiftDrillTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDrillTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		03297C18298EEA55006B9FC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03297C32298F173F006B9FC4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				03297C1D298EEA55006B9FC4 /* SwiftDrill */,
+				03297C36298F173F006B9FC4 /* SwiftDrillTests */,
 				03297C1C298EEA55006B9FC4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				03297C1B298EEA55006B9FC4 /* SwiftDrill.app */,
+				03297C35298F173F006B9FC4 /* SwiftDrillTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,6 +116,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		03297C36298F173F006B9FC4 /* SwiftDrillTests */ = {
+			isa = PBXGroup;
+			children = (
+				03297C37298F173F006B9FC4 /* SwiftDrillTests.swift */,
+			);
+			path = SwiftDrillTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -114,6 +144,24 @@
 			productReference = 03297C1B298EEA55006B9FC4 /* SwiftDrill.app */;
 			productType = "com.apple.product-type.application";
 		};
+		03297C34298F173F006B9FC4 /* SwiftDrillTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03297C3D298F173F006B9FC4 /* Build configuration list for PBXNativeTarget "SwiftDrillTests" */;
+			buildPhases = (
+				03297C31298F173F006B9FC4 /* Sources */,
+				03297C32298F173F006B9FC4 /* Frameworks */,
+				03297C33298F173F006B9FC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03297C3A298F173F006B9FC4 /* PBXTargetDependency */,
+			);
+			name = SwiftDrillTests;
+			productName = SwiftDrillTests;
+			productReference = 03297C35298F173F006B9FC4 /* SwiftDrillTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -126,6 +174,10 @@
 				TargetAttributes = {
 					03297C1A298EEA55006B9FC4 = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					03297C34298F173F006B9FC4 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 03297C1A298EEA55006B9FC4;
 					};
 				};
 			};
@@ -143,6 +195,7 @@
 			projectRoot = "";
 			targets = (
 				03297C1A298EEA55006B9FC4 /* SwiftDrill */,
+				03297C34298F173F006B9FC4 /* SwiftDrillTests */,
 			);
 		};
 /* End PBXProject section */
@@ -154,6 +207,13 @@
 			files = (
 				03297C26298EEA57006B9FC4 /* Preview Assets.xcassets in Resources */,
 				03297C23298EEA57006B9FC4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03297C33298F173F006B9FC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,7 +230,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		03297C31298F173F006B9FC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03297C38298F173F006B9FC4 /* SwiftDrillTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03297C3A298F173F006B9FC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03297C1A298EEA55006B9FC4 /* SwiftDrill */;
+			targetProxy = 03297C39298F173F006B9FC4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		03297C27298EEA57006B9FC4 /* Debug */ = {
@@ -345,6 +421,50 @@
 			};
 			name = Release;
 		};
+		03297C3B298F173F006B9FC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S3T6T5AM5G;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.morshed.alam.SwiftDrillTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftDrill.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftDrill";
+			};
+			name = Debug;
+		};
+		03297C3C298F173F006B9FC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S3T6T5AM5G;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.morshed.alam.SwiftDrillTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftDrill.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftDrill";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -362,6 +482,15 @@
 			buildConfigurations = (
 				03297C2A298EEA57006B9FC4 /* Debug */,
 				03297C2B298EEA57006B9FC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03297C3D298F173F006B9FC4 /* Build configuration list for PBXNativeTarget "SwiftDrillTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03297C3B298F173F006B9FC4 /* Debug */,
+				03297C3C298F173F006B9FC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
