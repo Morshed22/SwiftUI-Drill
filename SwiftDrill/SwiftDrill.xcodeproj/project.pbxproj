@@ -17,6 +17,8 @@
 		038AE8DB29901C2D005FE44B /* TextViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038AE8DA29901C2D005FE44B /* TextViews.swift */; };
 		038AE8DD29901C46005FE44B /* RoundViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038AE8DC29901C46005FE44B /* RoundViews.swift */; };
 		038AE8DF29901C64005FE44B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038AE8DE29901C64005FE44B /* Constants.swift */; };
+		038AE8E229902E93005FE44B /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038AE8E129902E93005FE44B /* Shapes.swift */; };
+		038AE8E42990344B005FE44B /* PointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038AE8E32990344B005FE44B /* PointsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		038AE8DA29901C2D005FE44B /* TextViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViews.swift; sourceTree = "<group>"; };
 		038AE8DC29901C46005FE44B /* RoundViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundViews.swift; sourceTree = "<group>"; };
 		038AE8DE29901C64005FE44B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		038AE8E129902E93005FE44B /* Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
+		038AE8E32990344B005FE44B /* PointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,8 @@
 				038AE8D829901A4D005FE44B /* BackgroundView.swift */,
 				038AE8DA29901C2D005FE44B /* TextViews.swift */,
 				038AE8DC29901C46005FE44B /* RoundViews.swift */,
+				038AE8E129902E93005FE44B /* Shapes.swift */,
+				038AE8E32990344B005FE44B /* PointsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -238,7 +244,9 @@
 			files = (
 				03297C21298EEA55006B9FC4 /* ContentView.swift in Sources */,
 				03297C30298F12CB006B9FC4 /* Game.swift in Sources */,
+				038AE8E42990344B005FE44B /* PointsView.swift in Sources */,
 				038AE8D929901A4D005FE44B /* BackgroundView.swift in Sources */,
+				038AE8E229902E93005FE44B /* Shapes.swift in Sources */,
 				038AE8DB29901C2D005FE44B /* TextViews.swift in Sources */,
 				038AE8DF29901C64005FE44B /* Constants.swift in Sources */,
 				03297C1F298EEA55006B9FC4 /* SwiftDrillApp.swift in Sources */,
